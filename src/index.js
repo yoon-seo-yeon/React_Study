@@ -24,4 +24,5 @@
 // import './use-effect-demo/use-effect-with-dom.js';
 // import './component-intermediate/timer-demo.js';
 // import './use-effect-demo/use-effect-unmount.js';
-import './component-advanced/context-api-theme-context.js';
+// import './component-advanced/context-api-theme-context.js';
+import './component-advanced/fake-login.js';
