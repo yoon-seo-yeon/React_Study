@@ -30,5 +30,5 @@
 // import './component-styling/using-css-module.js';
 // import './component-styling/using-sass.js';
 // import './component-styling/using-styled-components.js';
-import './component-styling/using-svg.js';
-
+// import './component-styling/using-svg.js';
+import './component-styling/using-react-icons.js';
