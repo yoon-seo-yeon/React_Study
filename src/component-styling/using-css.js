@@ -8,7 +8,7 @@ import './App.css'
 const App = function(props) {
     return (
         <div id="mydiv">
-            <p className="mypara">para</p>
+            <p className="mypara">seo yeon</p>
         </div>
     )
 }
