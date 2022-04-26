@@ -31,4 +31,5 @@
 // import './component-styling/using-sass.js';
 // import './component-styling/using-styled-components.js';
 // import './component-styling/using-svg.js';
-import './component-styling/using-react-icons.js';
+// import './component-styling/using-react-icons.js';
+import './use-reducer-demo/use-reducer-counter-1.js';
