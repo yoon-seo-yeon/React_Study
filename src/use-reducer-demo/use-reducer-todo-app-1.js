@@ -7,6 +7,27 @@ const Action = {
     TOGGLE_TODO: 'TOGGLE_TODO'
 }
 
+const createAddTodoAction = (text) => {
+    return {
+        type: Action.ADD_TODO,
+        payload: { id: Date.now(), text, completed: false }
+    }
+}
+
+const createRemoveTodoAction = (id) => {
+    return {
+        type: Action.REMOVE_TODO,
+        payload: id
+    }
+}
+
+const createToggleTodoAction = (id) => {
+    return {
+        type: Action.TOGGLE_TODO,
+        payload: id
+    }
+}
+
 function reducer(state, action) {
     switch(action.type) {
         case Action.ADD_TODO:
