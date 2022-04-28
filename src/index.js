@@ -33,4 +33,5 @@
 // import './component-styling/using-svg.js';
 // import './component-styling/using-react-icons.js';
 // import './use-reducer-demo/use-reducer-counter-1.js';
-import './use-reducer-demo/use-reducer-todo-app-1';
+// import './use-reducer-demo/use-reducer-todo-app-1';
+import './use-callback-memo-demo/use-callback-counter-demo.js';
