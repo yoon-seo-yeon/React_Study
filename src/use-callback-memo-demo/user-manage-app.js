@@ -22,6 +22,15 @@ const UserManageApp = () => {
     */
 
     // useMemo 사용하여 나이 20 미만인 미성년자 수 저장
+    const minorCount = (() => {
+        let count = 0;
+        for(const user of users) {
+            if(user.age < 20) count++;
+        }
+
+        return count
+    }, [users]);
+    /*
     //반복문
     const minorCount = (() => {
         let count = 0;
@@ -31,12 +40,18 @@ const UserManageApp = () => {
 
         return count
     })()
+    */
 
     // useMemo 사용하여 나이 20 미만인 미성년자의 이름을 배열 형태로 저장
+    const minorNames = useMemo(() => {
+        return users.filter(user => user.age < 20);
+    }, [users])
+    /*
     //filter
     const minorNames = (() => {
         return users.filter(user => user.age < 20);
     })();
+    */
 
     return (
         <div>
