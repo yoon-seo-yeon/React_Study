@@ -13,7 +13,13 @@ const UserManageApp = () => {
     const [age, setAge] = useState(20)
 
     // useCallback 사용하여 새 사용자 추가하는 함수 생성 및 저장
+    const addUser = useCallback(() => {
+        setUsers(users.concat({name, age}))
+    }, [users, name, age])
+    /*
+    //userCallback 사용하지 않고 한 것
     const addUser = () => setUsers(users.concat({name, age}))
+    */
 
     // useMemo 사용하여 나이 20 미만인 미성년자 수 저장
     //반복문
