@@ -7,6 +7,15 @@ const Action = {
     TOGGLE_TODO: 'TOGGLE_TODO'
 }
 
+/*
+dispatch ({
+    type: Action.ADD_TODO,
+    payload: { id: Date.now(), text, completed: false }
+})
+
+dispatch(createAddTodoAction("리액트 공부"))
+*/
+
 const createAddTodoAction = (text) => {
     return {
         type: Action.ADD_TODO,
@@ -68,10 +77,14 @@ function TodoApp(props) {
         <div>
             <input type="text" value={todoText} onChange={(e) => { setTodoText(e.target.value) }} />
             <button onClick={() => {
+                dispatch(createAddTodoAction(todoText))
+                /*
+                10번째 줄에 dispatch없을 때 사용
                 dispatch({
                     type: Action.ADD_TODO,
                     payload: { id: Date.now(), text: todoText, completed: false }
                 })
+                */
 
                 setTodoText('')
             }}>추가</button>
@@ -80,8 +93,14 @@ function TodoApp(props) {
                     todos.map(todo => {
                         return <li key={todo.id}>
                             <TodoItem todo={todo}
+                                toggleTodo={(id) => dispatch(createToggleTodoAction(id))}
+                                removeTodo={(id) => dispatch(createRemoveTodoAction(id))}
+
+                                /*
+                                10번째 줄에 dispatch없을 때 사용
                                 toggleTodo={(id) => dispatch({ type: Action.TOGGLE_TODO, payload: id })}
                                 removeTodo={(id) => dispatch({ type: Action.REMOVE_TODO, payload: id })}
+                                */
                             />
                         </li>
                     })
