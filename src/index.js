@@ -35,4 +35,5 @@
 // import './use-reducer-demo/use-reducer-counter-1.js';
 // import './use-reducer-demo/use-reducer-todo-app-1';
 // import './use-callback-memo-demo/use-callback-counter-demo.js';
-import './use-callback-memo-demo/use-memo-demo.js';
+// import './use-callback-memo-demo/use-memo-demo.js';
+import './use-callback-memo-demo/user-manage-app.js';
