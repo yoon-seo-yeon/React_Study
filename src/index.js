@@ -37,4 +37,5 @@
 // import './use-callback-memo-demo/use-callback-counter-demo.js';
 // import './use-callback-memo-demo/use-memo-demo.js';
 // import './use-callback-memo-demo/user-manage-app.js';
-import './use-callback-memo-demo/using-react-memo.js';
+// import './use-callback-memo-demo/using-react-memo.js';
+import './use-callback-memo-demo/drawstar.js';
