@@ -39,4 +39,4 @@
 // import './use-callback-memo-demo/user-manage-app.js';
 // import './use-callback-memo-demo/using-react-memo.js';
 //import './use-callback-memo-demo/drawstar.js';
-import './test/05_props-basic.js';
+import './component-intermediate/state-study-1.js';

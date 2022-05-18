@@ -2,6 +2,11 @@ import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 
 const Counter = function(props) {
+    /*
+    usestate는 배열을 반환
+    배열의 첫 번째 요소는 <상태 값 저장 변수>
+    배열의 두 번째 요소는 <상태 값 갱신 함수>
+    */
     const [count, setCount] = useState(0)
     const [text, setText] = useState("a")
 
