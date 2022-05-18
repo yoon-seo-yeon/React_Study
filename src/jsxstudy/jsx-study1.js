@@ -16,9 +16,11 @@ function double(value) {
 
 const JSXwithExpressions = (
     /* JSX 주석 */
+    /* &nbsp; => 공백을 나타내는 특수 문자*/
     <h1>
         {lst[0]}
-        &nbsp;{person.name}
+        
+        &nbsp;{person.name} 
         &nbsp;{person.age}
         &nbsp;{2 + 2}
         &nbsp;{person.name.toUpperCase()}
