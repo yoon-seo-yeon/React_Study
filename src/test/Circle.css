@@ -1,0 +1,21 @@
+/* #mydiv {
+    border-radius: 50%;
+    color : "000000";
+} */
+
+/* #circle {
+    width: 100%;
+    background: lightgray;
+}
+
+.mypara {
+    color: purple;
+} */
+
+.border {
+    border-radius: 50%;
+}
+
+.color {
+    color: red;
+}
