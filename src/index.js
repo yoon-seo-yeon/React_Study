@@ -39,4 +39,4 @@
 // import './use-callback-memo-demo/user-manage-app.js';
 // import './use-callback-memo-demo/using-react-memo.js';
 //import './use-callback-memo-demo/drawstar.js';
-import './etc/using-portal.js';
+import './test/3214_윤서연.js';
